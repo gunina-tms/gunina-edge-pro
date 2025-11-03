@@ -4,7 +4,7 @@ import pandas as pd
 import plotly.express as px
 from supabase import create_client, Client
 from datetime import datetime
-
+st.secrets.load_if_not_cached()
 # === SUPABASE CLIENT ===
 @st.cache_resource
 def init_supabase() -> Client:
