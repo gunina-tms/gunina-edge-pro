@@ -7,7 +7,7 @@ from datetime import datetime
 
 # === HARD CODED (SERVICE ROLE KEY) — REPLACE WITH YOURS ===
 SUPABASE_URL = "https://iwmoqatsdwqungpljmof.supabase.co"
-SUPABASE_SERVICE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml3bW9xYXRzZHdxdW5ncGxqbW9mIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTcxMDA3NjE3NiwiZXhwIjoyMDI1NjUyMTc2fQ.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"  # ← YOUR SERVICE KEY
+SUPABASE_SERVICE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml3bW9xYXRzZHdxdW5ncGxqbW9mIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2MjE3NDE0NSwiZXhwIjoyMDc3NzUwMTQ1fQ.p-wpUS3Rftkg8pW3zKbWJABKGEwSneXun4gXTStHGB0"  # ← YOUR SERVICE KEY
 
 supabase = create_client(SUPABASE_URL, SUPABASE_SERVICE_KEY)
 
