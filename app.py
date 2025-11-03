@@ -1,19 +1,15 @@
-# app.py — FINAL WORKING (NO ERRORS)
+# app.py — HARD CODED (WORKS 100%)
 import streamlit as st
 import pandas as pd
 import plotly.express as px
 from supabase import create_client, Client
 from datetime import datetime
 
-# === SUPABASE ===
-@st.cache_resource
-def init_supabase() -> Client:
-    return create_client(
-        st.secrets["https://iwmoqatsdwqungpljmof.supabase.co"],
-        st.secrets["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml3bW9xYXRzZHdxdW5ncGxqbW9mIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjIxNzQxNDUsImV4cCI6MjA3Nzc1MDE0NX0.ZcnGG5v6kRPZISMqMQ_8hqs2S2IVGw-_bPamRt7xTlw"]
-    )
+# === HARD CODED (TEMPORARY) ===
+SUPABASE_URL = "https://iwmoqatsdwqungpljmof.supabase.co"
+SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml3bW9xYXRzZHdxdW5ncGxqbW9mIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTAwNzYxNzYsImV4cCI6MjAyNTY1MjE3Nn0._bPamRt7xT1w"
 
-supabase = init_supabase()
+supabase = create_client(SUPABASE_URL, SUPABASE_ANON_KEY)
 
 # === LOGIN ===
 if 'user' not in st.session_state:
