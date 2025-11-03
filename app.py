@@ -9,8 +9,8 @@ from datetime import datetime
 @st.cache_resource
 def init_supabase() -> Client:
     return create_client(
-        st.secrets["supabase"]["https://iwmoqatsdwqungpljmof.supabase.co"],
-        st.secrets["supabase"]["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml3bW9xYXRzZHdxdW5ncGxqbW9mIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjIxNzQxNDUsImV4cCI6MjA3Nzc1MDE0NX0.ZcnGG5v6kRPZISMqMQ_8hqs2S2IVGw-_bPamRt7xTlw"]
+        st.secrets["https://iwmoqatsdwqungpljmof.supabase.co"],
+        st.secrets["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml3bW9xYXRzZHdxdW5ncGxqbW9mIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjIxNzQxNDUsImV4cCI6MjA3Nzc1MDE0NX0.ZcnGG5v6kRPZISMqMQ_8hqs2S2IVGw-_bPamRt7xTlw"]
     )
 
 supabase = init_supabase()
